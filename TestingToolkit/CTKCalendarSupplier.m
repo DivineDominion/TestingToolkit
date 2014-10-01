@@ -1,5 +1,5 @@
 //
-//  CTWCalendarSupplier.m
+//  CTKCalendarSupplier.m
 //  WordCounter
 //
 //  Created by Christian Tietze on 14.04.14.

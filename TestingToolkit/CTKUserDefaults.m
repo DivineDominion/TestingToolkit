@@ -1,5 +1,5 @@
 //
-//  CTWUserDefaults.m
+//  CTKUserDefaults.m
 //  WordCounter
 //
 //  Created by Christian Tietze on 19.06.14.

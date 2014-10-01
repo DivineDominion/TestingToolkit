@@ -1,5 +1,5 @@
 //
-//  CTWNotificationCenter.m
+//  CTKNotificationCenter.m
 //  WordCounter
 //
 //  Created by Christian Tietze on 06.06.14.
