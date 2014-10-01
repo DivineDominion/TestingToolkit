@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		60ECAB0619DC543B0036EE81 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECAB0519DC543B0036EE81 /* Cocoa.framework */; };
-		60ECAB1019DC543B0036EE81 /* TestingToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ECAB0F19DC543B0036EE81 /* TestingToolkit.m */; };
 		60ECAB1719DC543B0036EE81 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECAB1619DC543B0036EE81 /* XCTest.framework */; };
 		60ECAB1819DC543B0036EE81 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECAB0519DC543B0036EE81 /* Cocoa.framework */; };
 		60ECAB1B19DC543B0036EE81 /* libTestingToolkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECAB0219DC543B0036EE81 /* libTestingToolkit.a */; };
 		60ECAB2119DC543B0036EE81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60ECAB1F19DC543B0036EE81 /* InfoPlist.strings */; };
-		60ECAB2319DC543B0036EE81 /* TestingToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ECAB2219DC543B0036EE81 /* TestingToolkitTests.m */; };
+		60ECAB3B19DC544F0036EE81 /* CTKCalendarSupplier.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ECAB3519DC544F0036EE81 /* CTKCalendarSupplier.h */; };
+		60ECAB3C19DC544F0036EE81 /* CTKCalendarSupplier.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ECAB3619DC544F0036EE81 /* CTKCalendarSupplier.m */; };
+		60ECAB3D19DC544F0036EE81 /* CTKNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ECAB3719DC544F0036EE81 /* CTKNotificationCenter.h */; };
+		60ECAB3E19DC544F0036EE81 /* CTKNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ECAB3819DC544F0036EE81 /* CTKNotificationCenter.m */; };
+		60ECAB3F19DC544F0036EE81 /* CTKUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ECAB3919DC544F0036EE81 /* CTKUserDefaults.h */; };
+		60ECAB4019DC544F0036EE81 /* CTKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ECAB3A19DC544F0036EE81 /* CTKUserDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +37,16 @@
 		60ECAB0919DC543B0036EE81 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		60ECAB0A19DC543B0036EE81 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		60ECAB0D19DC543B0036EE81 /* TestingToolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestingToolkit-Prefix.pch"; sourceTree = "<group>"; };
-		60ECAB0E19DC543B0036EE81 /* TestingToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingToolkit.h; sourceTree = "<group>"; };
-		60ECAB0F19DC543B0036EE81 /* TestingToolkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingToolkit.m; sourceTree = "<group>"; };
 		60ECAB1519DC543B0036EE81 /* TestingToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60ECAB1619DC543B0036EE81 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		60ECAB1E19DC543B0036EE81 /* TestingToolkitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestingToolkitTests-Info.plist"; sourceTree = "<group>"; };
 		60ECAB2019DC543B0036EE81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		60ECAB2219DC543B0036EE81 /* TestingToolkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingToolkitTests.m; sourceTree = "<group>"; };
+		60ECAB3519DC544F0036EE81 /* CTKCalendarSupplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTKCalendarSupplier.h; sourceTree = "<group>"; };
+		60ECAB3619DC544F0036EE81 /* CTKCalendarSupplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTKCalendarSupplier.m; sourceTree = "<group>"; };
+		60ECAB3719DC544F0036EE81 /* CTKNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTKNotificationCenter.h; sourceTree = "<group>"; };
+		60ECAB3819DC544F0036EE81 /* CTKNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTKNotificationCenter.m; sourceTree = "<group>"; };
+		60ECAB3919DC544F0036EE81 /* CTKUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTKUserDefaults.h; sourceTree = "<group>"; };
+		60ECAB3A19DC544F0036EE81 /* CTKUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTKUserDefaults.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +113,12 @@
 		60ECAB0B19DC543B0036EE81 /* TestingToolkit */ = {
 			isa = PBXGroup;
 			children = (
-				60ECAB0E19DC543B0036EE81 /* TestingToolkit.h */,
-				60ECAB0F19DC543B0036EE81 /* TestingToolkit.m */,
+				60ECAB3519DC544F0036EE81 /* CTKCalendarSupplier.h */,
+				60ECAB3619DC544F0036EE81 /* CTKCalendarSupplier.m */,
+				60ECAB3719DC544F0036EE81 /* CTKNotificationCenter.h */,
+				60ECAB3819DC544F0036EE81 /* CTKNotificationCenter.m */,
+				60ECAB3919DC544F0036EE81 /* CTKUserDefaults.h */,
+				60ECAB3A19DC544F0036EE81 /* CTKUserDefaults.m */,
 				60ECAB0C19DC543B0036EE81 /* Supporting Files */,
 			);
 			path = TestingToolkit;
@@ -124,7 +135,6 @@
 		60ECAB1C19DC543B0036EE81 /* TestingToolkitTests */ = {
 			isa = PBXGroup;
 			children = (
-				60ECAB2219DC543B0036EE81 /* TestingToolkitTests.m */,
 				60ECAB1D19DC543B0036EE81 /* Supporting Files */,
 			);
 			path = TestingToolkitTests;
@@ -146,6 +156,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60ECAB3B19DC544F0036EE81 /* CTKCalendarSupplier.h in Headers */,
+				60ECAB3F19DC544F0036EE81 /* CTKUserDefaults.h in Headers */,
+				60ECAB3D19DC544F0036EE81 /* CTKNotificationCenter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60ECAB1019DC543B0036EE81 /* TestingToolkit.m in Sources */,
+				60ECAB3E19DC544F0036EE81 /* CTKNotificationCenter.m in Sources */,
+				60ECAB4019DC544F0036EE81 /* CTKUserDefaults.m in Sources */,
+				60ECAB3C19DC544F0036EE81 /* CTKCalendarSupplier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60ECAB2319DC543B0036EE81 /* TestingToolkitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
