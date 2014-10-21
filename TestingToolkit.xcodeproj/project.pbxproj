@@ -206,7 +206,7 @@
 		60ECAAFA19DC543B0036EE81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Christian Tietze";
 			};
 			buildConfigurationList = 60ECAAFD19DC543B0036EE81 /* Build configuration list for PBXProject "TestingToolkit" */;
@@ -351,6 +351,7 @@
 		60ECAB2719DC543B0036EE81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestingToolkit/TestingToolkit-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +362,7 @@
 		60ECAB2819DC543B0036EE81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestingToolkit/TestingToolkit-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
