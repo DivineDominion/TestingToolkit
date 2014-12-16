@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		60ECAB0619DC543B0036EE81 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECAB0519DC543B0036EE81 /* Cocoa.framework */; };
-		60ECAB1719DC543B0036EE81 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECAB1619DC543B0036EE81 /* XCTest.framework */; };
-		60ECAB1819DC543B0036EE81 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECAB0519DC543B0036EE81 /* Cocoa.framework */; };
-		60ECAB1B19DC543B0036EE81 /* libTestingToolkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ECAB0219DC543B0036EE81 /* libTestingToolkit.a */; };
-		60ECAB2119DC543B0036EE81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60ECAB1F19DC543B0036EE81 /* InfoPlist.strings */; };
 		60ECAB3B19DC544F0036EE81 /* CTKCalendarSupplier.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ECAB3519DC544F0036EE81 /* CTKCalendarSupplier.h */; };
 		60ECAB3C19DC544F0036EE81 /* CTKCalendarSupplier.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ECAB3619DC544F0036EE81 /* CTKCalendarSupplier.m */; };
 		60ECAB3D19DC544F0036EE81 /* CTKNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ECAB3719DC544F0036EE81 /* CTKNotificationCenter.h */; };
@@ -20,27 +16,14 @@
 		60ECAB4019DC544F0036EE81 /* CTKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ECAB3A19DC544F0036EE81 /* CTKUserDefaults.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		60ECAB1919DC543B0036EE81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 60ECAAFA19DC543B0036EE81 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 60ECAB0119DC543B0036EE81;
-			remoteInfo = TestingToolkit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		50329F6A1A3EF7BD001F5D31 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		60ECAB0219DC543B0036EE81 /* libTestingToolkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestingToolkit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		60ECAB0519DC543B0036EE81 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		60ECAB0819DC543B0036EE81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		60ECAB0919DC543B0036EE81 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		60ECAB0A19DC543B0036EE81 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		60ECAB0D19DC543B0036EE81 /* TestingToolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestingToolkit-Prefix.pch"; sourceTree = "<group>"; };
-		60ECAB1519DC543B0036EE81 /* TestingToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		60ECAB1619DC543B0036EE81 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		60ECAB1E19DC543B0036EE81 /* TestingToolkitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestingToolkitTests-Info.plist"; sourceTree = "<group>"; };
-		60ECAB2019DC543B0036EE81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60ECAB3519DC544F0036EE81 /* CTKCalendarSupplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTKCalendarSupplier.h; sourceTree = "<group>"; };
 		60ECAB3619DC544F0036EE81 /* CTKCalendarSupplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTKCalendarSupplier.m; sourceTree = "<group>"; };
 		60ECAB3719DC544F0036EE81 /* CTKNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTKNotificationCenter.h; sourceTree = "<group>"; };
@@ -58,16 +41,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60ECAB1219DC543B0036EE81 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				60ECAB1819DC543B0036EE81 /* Cocoa.framework in Frameworks */,
-				60ECAB1719DC543B0036EE81 /* XCTest.framework in Frameworks */,
-				60ECAB1B19DC543B0036EE81 /* libTestingToolkit.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				60ECAB0B19DC543B0036EE81 /* TestingToolkit */,
-				60ECAB1C19DC543B0036EE81 /* TestingToolkitTests */,
 				60ECAB0419DC543B0036EE81 /* Frameworks */,
 				60ECAB0319DC543B0036EE81 /* Products */,
 			);
@@ -85,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				60ECAB0219DC543B0036EE81 /* libTestingToolkit.a */,
-				60ECAB1519DC543B0036EE81 /* TestingToolkitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,8 +64,8 @@
 		60ECAB0419DC543B0036EE81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50329F6A1A3EF7BD001F5D31 /* UIKit.framework */,
 				60ECAB0519DC543B0036EE81 /* Cocoa.framework */,
-				60ECAB1619DC543B0036EE81 /* XCTest.framework */,
 				60ECAB0719DC543B0036EE81 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -132,23 +103,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		60ECAB1C19DC543B0036EE81 /* TestingToolkitTests */ = {
-			isa = PBXGroup;
-			children = (
-				60ECAB1D19DC543B0036EE81 /* Supporting Files */,
-			);
-			path = TestingToolkitTests;
-			sourceTree = "<group>";
-		};
-		60ECAB1D19DC543B0036EE81 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				60ECAB1E19DC543B0036EE81 /* TestingToolkitTests-Info.plist */,
-				60ECAB1F19DC543B0036EE81 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -182,24 +136,6 @@
 			productReference = 60ECAB0219DC543B0036EE81 /* libTestingToolkit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		60ECAB1419DC543B0036EE81 /* TestingToolkitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 60ECAB2919DC543B0036EE81 /* Build configuration list for PBXNativeTarget "TestingToolkitTests" */;
-			buildPhases = (
-				60ECAB1119DC543B0036EE81 /* Sources */,
-				60ECAB1219DC543B0036EE81 /* Frameworks */,
-				60ECAB1319DC543B0036EE81 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				60ECAB1A19DC543B0036EE81 /* PBXTargetDependency */,
-			);
-			name = TestingToolkitTests;
-			productName = TestingToolkitTests;
-			productReference = 60ECAB1519DC543B0036EE81 /* TestingToolkitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,21 +158,9 @@
 			projectRoot = "";
 			targets = (
 				60ECAB0119DC543B0036EE81 /* TestingToolkit */,
-				60ECAB1419DC543B0036EE81 /* TestingToolkitTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		60ECAB1319DC543B0036EE81 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				60ECAB2119DC543B0036EE81 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60ECAAFE19DC543B0036EE81 /* Sources */ = {
@@ -249,33 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60ECAB1119DC543B0036EE81 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		60ECAB1A19DC543B0036EE81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 60ECAB0119DC543B0036EE81 /* TestingToolkit */;
-			targetProxy = 60ECAB1919DC543B0036EE81 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		60ECAB1F19DC543B0036EE81 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60ECAB2019DC543B0036EE81 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		60ECAB2419DC543B0036EE81 /* Debug */ = {
@@ -370,42 +268,6 @@
 			};
 			name = Release;
 		};
-		60ECAB2A19DC543B0036EE81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestingToolkit/TestingToolkit-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TestingToolkitTests/TestingToolkitTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		60ECAB2B19DC543B0036EE81 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestingToolkit/TestingToolkit-Prefix.pch";
-				INFOPLIST_FILE = "TestingToolkitTests/TestingToolkitTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -423,15 +285,6 @@
 			buildConfigurations = (
 				60ECAB2719DC543B0036EE81 /* Debug */,
 				60ECAB2819DC543B0036EE81 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		60ECAB2919DC543B0036EE81 /* Build configuration list for PBXNativeTarget "TestingToolkitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				60ECAB2A19DC543B0036EE81 /* Debug */,
-				60ECAB2B19DC543B0036EE81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
