@@ -1,6 +1,6 @@
 //
 //  CTKNotificationCenter.h
-//  WordCounter
+//  TestingToolkit
 //
 //  Created by Christian Tietze on 06.06.14.
 //  Copyright (c) 2014 Christian Tietze. All rights reserved.

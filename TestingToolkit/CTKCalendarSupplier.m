@@ -1,6 +1,6 @@
 //
 //  CTKCalendarSupplier.m
-//  WordCounter
+//  TestingToolkit
 //
 //  Created by Christian Tietze on 14.04.14.
 //  Copyright (c) 2014 Christian Tietze. All rights reserved.
