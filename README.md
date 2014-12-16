@@ -12,66 +12,70 @@ A collection of common Cocoa singleton wrappers which are useful for unit-testin
 
 To record and play back sent notifications from a test case, add a custom `NSNotificationCenter` subclass. (I prefer to inherit from `NSObject` to avoid unwanted side-effects and add methods until the informal protocol is satisfied. The following should give a good head start.)
 
-    @interface TestNotificationCenter : NSObject
-    @property (nonatomic, strong) NSMutableArray *notifications;
-    @property (nonatomic, readonly) BOOL didReceiveNotifications;
-    @end
+```obj-c
+@interface TestNotificationCenter : NSObject
+@property (nonatomic, strong) NSMutableArray *notifications;
+@property (nonatomic, readonly) BOOL didReceiveNotifications;
+@end
 
-    @implementation TestNotificationCenter
-    - (NSArray *)notifications {
-        if (!_notifications) {
-            _notifications = [NSMutableArray array];
-        }
-    
-        return _notifications;
+@implementation TestNotificationCenter
+- (NSArray *)notifications {
+    if (!_notifications) {
+        _notifications = [NSMutableArray array];
     }
 
-    - (BOOL)didReceiveNotifications {
-        return self.notifications && self.notifications.count > 0;
-    }
+    return _notifications;
+}
 
-    - (void)postNotificationName:(NSString *)aName object:(id)anObject userInfo:(NSDictionary *)aUserInfo {
-        NSDictionary *notification = @{@"name" : aName, @"object" : anObject, @"userInfo" : aUserInfo};
-        [self.notifications addObject:notification];
-    }
+- (BOOL)didReceiveNotifications {
+    return self.notifications && self.notifications.count > 0;
+}
 
-    - (void)addObserver:(id)observer selector:(SEL)aSelector name:(NSString *)aName object:(id)anObject { /* no op */ }
-    - (void)removeObserver:(id)observer { /* no op */ }
-    - (void)removeObserver:(id)observer name:(NSString *)aName object:(id)anObject { /* no op */ }
-    @end
+- (void)postNotificationName:(NSString *)aName object:(id)anObject userInfo:(NSDictionary *)aUserInfo {
+    NSDictionary *notification = @{@"name" : aName, @"object" : anObject, @"userInfo" : aUserInfo};
+    [self.notifications addObject:notification];
+}
+
+- (void)addObserver:(id)observer selector:(SEL)aSelector name:(NSString *)aName object:(id)anObject { /* no op */ }
+- (void)removeObserver:(id)observer { /* no op */ }
+- (void)removeObserver:(id)observer name:(NSString *)aName object:(id)anObject { /* no op */ }
+@end
+```
 
 Then use the test double like this:
 
-    @interface ExampleTests : XCTestCase
-    @end
-    
-    @implementation ExampleTests
-    {
-        id objectUnderTest;
-        TestNotificationCenter *testNotificationCenter;
-    }
+```obj-c
+@interface ExampleTests : XCTestCase
+@end
 
-    - (void)setUp {
-        [super setUp];
-    
-        testNotificationCenter = [[TestNotificationCenter alloc] init];
-        [CTKNotificationCenter setSharedInstance:[CTKNotificationCenter notificationCenterWith:testNotificationCenter]];
-        
-        objectUnderTest = [[ExampleObject alloc] init];
-    }
+@implementation ExampleTests
+{
+    id objectUnderTest;
+    TestNotificationCenter *testNotificationCenter;
+}
 
-    - (void)tearDown {
-        [CTKNotificationCenter resetSharedInstance];
-        [super tearDown];
-    }
+- (void)setUp {
+    [super setUp];
 
-    - (void)testDoingSomething_DoesntBroadcast {
-        [objectUnderTest performSomeAction];
+    testNotificationCenter = [[TestNotificationCenter alloc] init];
+    [CTKNotificationCenter setSharedInstance:[CTKNotificationCenter notificationCenterWith:testNotificationCenter]];
     
-        XCTAssertFalse(testNotificationCenter.didReceiveNotifications);
-    }
-    // ...
-    @end
+    objectUnderTest = [[ExampleObject alloc] init];
+}
+
+- (void)tearDown {
+    [CTKNotificationCenter resetSharedInstance];
+    [super tearDown];
+}
+
+- (void)testDoingSomething_DoesntBroadcast {
+    [objectUnderTest performSomeAction];
+
+    XCTAssertFalse(testNotificationCenter.didReceiveNotifications);
+}
+// ...
+@end
+```
 
 Ensure that you obtain `NSNotificationCenter` throughout your application by calling `[CTKNotificationCenter defaultCenter]`.
 
