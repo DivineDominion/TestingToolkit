@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		50F3BC3F2143D591000D7DB0 /* TestingToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F3BC3D2143D591000D7DB0 /* TestingToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50F3BC432143D5E0000D7DB0 /* CTKCalendarSupplier.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ECAB3519DC544F0036EE81 /* CTKCalendarSupplier.h */; };
+		50F3BC432143D5E0000D7DB0 /* CTKCalendarSupplier.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ECAB3519DC544F0036EE81 /* CTKCalendarSupplier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50F3BC442143D5E0000D7DB0 /* CTKCalendarSupplier.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ECAB3619DC544F0036EE81 /* CTKCalendarSupplier.m */; };
-		50F3BC452143D5E0000D7DB0 /* CTKNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ECAB3719DC544F0036EE81 /* CTKNotificationCenter.h */; };
+		50F3BC452143D5E0000D7DB0 /* CTKNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ECAB3719DC544F0036EE81 /* CTKNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50F3BC462143D5E0000D7DB0 /* CTKNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ECAB3819DC544F0036EE81 /* CTKNotificationCenter.m */; };
-		50F3BC472143D5E0000D7DB0 /* CTKUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ECAB3919DC544F0036EE81 /* CTKUserDefaults.h */; };
+		50F3BC472143D5E0000D7DB0 /* CTKUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ECAB3919DC544F0036EE81 /* CTKUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50F3BC482143D5E0000D7DB0 /* CTKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ECAB3A19DC544F0036EE81 /* CTKUserDefaults.m */; };
 /* End PBXBuildFile section */
 
@@ -337,6 +337,7 @@
 				50F3BC422143D591000D7DB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60ECAAFD19DC543B0036EE81 /* Build configuration list for PBXProject "TestingToolkit" */ = {
 			isa = XCConfigurationList;
