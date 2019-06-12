@@ -14,8 +14,6 @@ FOUNDATION_EXPORT double TestingToolkitVersionNumber;
 //! Project version string for TestingToolkit.
 FOUNDATION_EXPORT const unsigned char TestingToolkitVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <TestingToolkit/PublicHeader.h>
-
-#import "CTKCalendarSupplier.h"
-#import "CTKNotificationCenter.h"
-#import "CTKUserDefaults.h"
+#import <TestingToolkit/CTKCalendarSupplier.h>
+#import <TestingToolkit/CTKNotificationCenter.h>
+#import <TestingToolkit/CTKUserDefaults.h>
